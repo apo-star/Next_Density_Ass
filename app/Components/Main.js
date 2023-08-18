@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 function Main() {
   return (
-    <div className="bg-[#EFECFF] flex direction-row items-center  justify-around gap-10 rounded-2xl mt-5 overflow-hidden p-12 relative h-[700px] ">
+    <div className="bg-[#EFECFF] w-full flex direction-row items-center  justify-around gap-10 rounded-2xl mt-5 overflow-hidden p-12 relative h-[700px] ">
       <div className="flex gap-5 flex-col ">
         <p>Ahead app</p>
         <h1 className="text-6xl leading-[60px]  font-bold">
