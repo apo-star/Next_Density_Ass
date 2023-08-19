@@ -1,6 +1,29 @@
 import React from "react";
 import Image from "next/image";
+import {gsap} from 'gsap';
+import {ScrollTrigger} from "gsap/ScrollTrigger"
+import {useRef,useEffect} from 'react';
+
 function Main() {
+  
+  gsap.registerPlugin(ScrollTrigger);
+    let phoneImage= useRef(null);
+
+    useEffect(()=>{
+        gsap.from(phoneImage,{
+            scale:0,
+            opacity:0,
+            rotate:100,
+            duration:4.2,
+            ease:"elastic.out(1.2, 0.3)",
+            scrollTrigger: {
+              trigger: phoneImage,
+              start:"top 80% ",
+            }
+  
+        })
+    },[])
+
   return (
     <div className="bg-[#EFECFF] w-full flex direction-row items-center  justify-around gap-10 rounded-2xl mt-5 overflow-hidden p-12 relative h-[700px] ">
       <div className="flex gap-5 flex-col ">
@@ -26,6 +49,7 @@ function Main() {
       <div className="h-[500px] relative w-[500px]  rounded-full border-dashed border-white flex justify-center items-center  border-[7px] ">
         <div className="h-[250px] bg-[#DDD6F8] rounded-full w-[250px] relative   flex justify-center items-center">
           <img
+            ref={(el=>{phoneImage=el})}
             src={"assets/Magic.png "}
             className="absolute -left-16"
             height={45}

@@ -41,7 +41,7 @@ function Footer() {
             <div>hello@join.com</div>
           </div>
         </div>
-        <Image className='' height={100} width={150} src={'/assets/mac.png'} />
+        <Image height={100} width={150} src={'/assets/mac.png'} />
         <p>© 2023 Ahead app. All Right reserved</p>
       </div>
     </div>

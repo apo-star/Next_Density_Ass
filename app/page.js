@@ -6,6 +6,8 @@ import EqBeats from './Components/EqBeats';
 import OpenVaccancy from './Components/OpenVacancy';
 import Work from './Components/Work';
 import TestPrivacy from './Components/TestPrivacy';
+import SliderCards from './Components/SliderCards';
+import SelfImprovement from './Components/SelfImprovement';
 
 export default function Home() {
   return (
@@ -13,7 +15,9 @@ export default function Home() {
       <Header/>
       <Main/>
       <EqBeats/>
-
+      <SliderCards/>
+      
+      <SelfImprovement/>
       <EqBeats/>
       <TestPrivacy/>
       <Work/>

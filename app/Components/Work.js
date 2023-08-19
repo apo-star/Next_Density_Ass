@@ -58,7 +58,7 @@ function Work() {
                 <h1 ref={(el=>{text1=el})} className='text-5xl font-bold'>Work with us</h1>
 
                 <div className='w-full flex flex-col gap-4 p-4 rounded-t-3xl mt-9 bg-white '>
-                    <img ref={(el=>{pinkie=el})} className='rounded-3xl border-radius-50%' width={70} src={"/assets/purple.png"} />
+                    <img ref={(el=>{pinkie=el})} className='rounded-3xl border-radius-50%' width={70} src={"/assets/purple pie.gif"} alt='purple'/>
                     <h1  className='text-xl font-bold'>About</h1>
                     <p className='text-lg leading-8'>At ahead our goal is to make self-
                         improvement fun and lasting. We know there's
