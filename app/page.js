@@ -4,6 +4,8 @@ import Main from './Components/Main'
 import Footer from './Components/Footer';
 import EqBeats from './Components/EqBeats';
 import OpenVaccancy from './Components/OpenVacancy';
+import Work from './Components/Work';
+import TestPrivacy from './Components/TestPrivacy';
 
 export default function Home() {
   return (
@@ -11,6 +13,10 @@ export default function Home() {
       <Header/>
       <Main/>
       <EqBeats/>
+
+      <EqBeats/>
+      <TestPrivacy/>
+      <Work/>
       <OpenVaccancy/>
       <Footer/>
     </main>
