@@ -42,18 +42,18 @@ function Work() {
             opacity:0,
             rotate:100,
             duration:3.2,
+            repeat:-1,
             ease:"elastic.out(1.2, 0.3)",
             scrollTrigger: {
             trigger: text1,
-            start:"top 80% ",
-            toggleActions:"restart complete reverse reset"
+            start:"top 80% "
             }
   
         })        
     },[])
 
     return (
-        <div className='h-[800px] p-8 flex rounded-3xl mt-56 bg-[#F3F1FF]'>
+        <div className='h-[800px] p-8 flex rounded-3xl mt-40 bg-[#F3F1FF]'>
             <div className='w-[50%] -ml-5  p-11 '>
                 <h1 ref={(el=>{text1=el})} className='text-5xl font-bold'>Work with us</h1>
 

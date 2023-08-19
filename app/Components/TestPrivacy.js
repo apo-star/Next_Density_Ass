@@ -54,7 +54,7 @@ function TestPrivacy() {
 
 
     return (
-        <div className='text-center mt-56'>
+        <div className='text-center mt-40'>
             <p className='text-lg font-semibold' >We take privacy seriously</p>
             <h1 ref={(el=>{data1=el})} className='text-4xl mt-2 font-bold'>Before you get started</h1>
             <p  ref={(el=>{data2=el})} className='text-2xl mt-5'>"We won't share your answers with anyone and won't ever tell <br/>
